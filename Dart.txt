@@ -1,0 +1,33 @@
+* Numbers -> 1; 5.5
+-> int -> 1
+-> double -> 5.5
+-> num (int or double) -> 1; 5.5
+
+int someNum = 7;
+print(someNum.isEven); // false
+
+double someNum = 7.6;
+print(someNum.round()); // 7
+
+* Strings
+
+String msg = "Hello World!";
+String anotherMsg = "Number $someNum";
+String anotherMsg = "Number ${someNum.toString()}";
+String anotherMsg = "Number " + someNum;
+
+.contains('');
+.startsWith('');
+.isEmpty;
+.toUpperCase();
+
+* Booleans
+* Lists
+* Maps
+
+*********
+
+* Sets
+* Runes
+* Symbols
+* null
