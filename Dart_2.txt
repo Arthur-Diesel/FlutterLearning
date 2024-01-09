@@ -1,0 +1,28 @@
+class Person {
+	final String name; // Can't be setted again!
+	int? age;
+	bool _isAlive = true;
+	late final String identificationNumber; // late String identificationNumber;
+
+	bool get livingStatus {
+		return _isAlive;
+	}
+
+	set updateLivingStatus(bool status){
+		_isAlive = status;
+	}
+
+	/*
+	Person(String name, int age){
+		this.name = name;
+		this.age = age;
+	}
+	*/
+	
+	// Person(this.name, this.age);
+	Person({ required this.name, this.age}); // , this.isAlive = true
+	Person.withIdentity({ required this.name, this.age, required this.identificationNumber });
+}
+
+Person learner = Person(name: "Arthur", age: 21);
+Person anotherLearner = Person.withIdentity(name: "Arthur", age: 21, identificationNumber: "1");
